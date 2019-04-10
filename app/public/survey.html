@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Another Online Dating App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>The Survey</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8" id="surveyDiv">
+                <h2 class="surveyTitle">About You</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="userName">Name <strong>(Required)</strong></label>
+                        <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profilePicLink">Link to Photo Image <strong>(Required)</strong></label>
+                        <input type="url" class="form-control" id="profilePicLink" placeholder="Image URL">
+                    </div>
+                </form>
+
+                <!-- Question 1 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">1. How likely are you to pay for a first date?</label>
+                        <select class="form-control" id="payForDate">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- Question 2 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">2. If you were playing in a Jai Alai tournament, which number would you wear on your jersey?</label>
+                        <select class="form-control" id="jerseyNumber">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- Question 3 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">3. You find a can of cat food laying around your apartment. How likely are you to eat it?</label>
+                        <select class="form-control" id="catFood">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+    
+                <!-- Question 4 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">4. How much wood could a woodchuck chuck if a woodchuck could chuck wood?</label>
+                        <select class="form-control" id="woodchuck">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- Question 5 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">5. How many burritos can you eat before you begin to hate yourself?</label>
+                        <select class="form-control" id="burritos">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+    
+                <!-- Question 6 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">6. How anxious do you get when you feel like you didn't remember to fully close the refrigerator and there's a chance you come home to a ton of spoiled food?</label>
+                        <select class="form-control" id="refrigerator">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- Question 7 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">7. How many cups of coffee do you need to drink in order to not feel like a zombie?</label>
+                        <select class="form-control" id="coffee">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+    
+                <!-- Question 8 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">8. How many minutes per side should a grilled cheese sandwich be cooked?</label>
+                        <select class="form-control" id="grilledCheese">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- Question 9 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">9. How confident are you that these questions will actually match you with a good friend?</label>
+                        <select class="form-control" id="friendConfidence">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- Question 10 -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">10. Pick a random number from 1 - 5!</label>
+                        <select class="form-control" id="random">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
+
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Your new best friend is...</h2>
+                        <h3><span id="matchName"></span></h3>
+                        <img id="matchPicture" src="nothing">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        $("span").on("click", function() {
+            modal.style.display = "none";
+        });
+        
+        // On click for when the user clicks submit
+        $("#submit").on("click", function(){
+            event.preventDefault();
+
+            // Make sure that everything is completely filled in
+            var complete;
+
+            if ($("#userName").val()=== "" || $("#profilePicLink").val() === ""){
+                complete = false;
+
+            } else {
+                complete = true;
+            };
+
+            // Save all inputs as the object
+            if (complete){
+                var newFriend = {
+                    name: $("#userName").val().trim(),
+                    photo: $("#profilePicLink").val().trim(),
+                    scores: [
+                        $("#payForDate").val(),
+                        $("#jerseyNumber").val(),
+                        $("#catFood").val(),
+                        $("#woodchuck").val(),
+                        $("#burritos").val(),
+                        $("#refrigerator").val(),
+                        $("#coffee").val(),
+                        $("#grilledCheese").val(),
+                        $("#friendConfidence").val(),
+                        $("#random").val()
+                    ]
+                };
+
+                console.log(newFriend);
+                
+                modal.style.display = "block";
+
+                // Send it via post request to /api/friends
+                $.post("/api/friends", newFriend, function(response){
+
+                    // write response(name, profile picture) to the modal
+                    $("#matchName").text(response.name);
+                    $("#matchPicture").attr("src", response.photo);
+                });
+
+            } else {
+                alert("Please include both your name and the link to your profile picture.");
+            }
+        });
+    </script>
+</body>    
+</html>
