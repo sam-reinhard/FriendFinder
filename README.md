@@ -10,3 +10,4 @@
   When the server is initiated, the home page loads via a GET request that is passed to the server on the server.js file. When the user clicks on the "Survey" button that acts as a link to the survey, they are then routed to the survey page via the corresponding route on the htmlRoutes.js file. Once the user inputs all of their information and submits the survey, the information is saved into a new object and is passed to the apiRoutes.js file via a POST request to be scored against the existing friends. After the scoring function has run, the server then responds to the POST request and sends back the object of the friend whose answers most closely match the answers of the user. Finally, the script on the survey.html file inserts the name and photo of the best friend match into a modal and displays it to the user. 
   
 ## Link to the Deployed Site
+https://sjr-friendfinder.herokuapp.com/survey.html
